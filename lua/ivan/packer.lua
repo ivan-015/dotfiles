@@ -35,7 +35,7 @@ return require('packer').startup(function(use)
     use('jose-elias-alvarez/null-ls.nvim')
     use('MunifTanjim/prettier.nvim')
 
-    use 'nvim-lua/plenary.nvim' 
+    use 'nvim-lua/plenary.nvim'
     use {
         'ThePrimeagen/harpoon',
         branch = 'harpoon2',
@@ -45,6 +45,13 @@ return require('packer').startup(function(use)
     use 'tpope/vim-fugitive'
     use 'tpope/vim-commentary'
 
-   use 'mbbill/undotree'
+    use 'mbbill/undotree'
+
+    use {
+        'nvim-tree/nvim-tree.lua',
+        requires = {
+            'nvim-tree/nvim-web-devicons',
+        }
+    }
 
 end)

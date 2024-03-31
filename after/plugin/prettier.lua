@@ -1,7 +1,3 @@
-local prettier = require("prettier")
-
-prettier.setup()
-
 local null_ls = require("null-ls")
 
 local group = vim.api.nvim_create_augroup("lsp_format_on_save", { clear = false })
@@ -14,6 +10,7 @@ null_ls.setup({
       vim.keymap.set("n", "<Leader>f", function()
         vim.lsp.buf.format({ bufnr = vim.api.nvim_get_current_buf() })
       end, { buffer = bufnr, desc = "[lsp] format" })
+
 
       -- format on save
       vim.api.nvim_clear_autocmds({ buffer = bufnr, group = group })
@@ -34,3 +31,6 @@ null_ls.setup({
     end
   end,
 })
+
+local prettier = require("prettier")
+prettier.setup()
