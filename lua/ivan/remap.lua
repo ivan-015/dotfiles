@@ -19,3 +19,5 @@ vim.keymap.set("x", "<leader>p", "\"_dP")
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
+-- ALlows me to see hover suggestions
+vim.keymap.set("n", "K", vim.lsp.buf.hover)
