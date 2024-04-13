@@ -21,3 +21,5 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- ALlows me to see hover suggestions
 vim.keymap.set("n", "K", vim.lsp.buf.hover)
+
+vim.keymap.set('n', '<C-f>', ":NvimTreeToggle<CR>")
