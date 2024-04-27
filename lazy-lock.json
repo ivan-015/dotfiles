@@ -29,5 +29,6 @@
   "undotree": { "branch": "master", "commit": "aa93a7e5890dbbebbc064cd22260721a6db1a196" },
   "vim-flog": { "branch": "master", "commit": "6289ab2e237ceeefdbcc7eb584b63d144bf88d94" },
   "vim-fugitive": { "branch": "master", "commit": "dac8e5c2d85926df92672bf2afb4fc48656d96c7" },
+  "vim-surround": { "branch": "master", "commit": "3d188ed2113431cf8dac77be61b842acb64433d9" },
   "vscode-js-debug": { "branch": "main", "commit": "2152210dc7c3933e2b4ef7c72d72cf2fef765760" }
 }
