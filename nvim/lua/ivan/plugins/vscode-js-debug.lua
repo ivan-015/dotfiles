@@ -6,7 +6,7 @@ return {
         {
           type = "pwa-node",
           request = "launch",
-          name = "TypeScript",
+          name = "Launch",
           cwd = "${workspaceFolder}",
           args = {
             "${workspaceFolder}/src/main.ts"
@@ -20,6 +20,13 @@ return {
           },
           sourceMaps = true,
         },
+        {
+          type = "pwa-node",
+          request = "attach",
+          name = "Attach",
+          processId = require('dap.utils').pick_process,
+          cwd = "${workspaceFolder}",
+        }
       }
     end
   end,

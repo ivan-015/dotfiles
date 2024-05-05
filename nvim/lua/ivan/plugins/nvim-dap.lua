@@ -45,6 +45,7 @@ return {
     vim.keymap.set('n', '<leader>di', dap.step_into, {})
     vim.keymap.set('n', '<leader>dt', dap.step_out, {})
     vim.keymap.set('n', '<leader>de', function()
+      dap.disconnect({ terminateDebuggee = true })
       dap.terminate({}, { terminateDebuggee = true }, function()
         vim.cmd.bd()
       end)
