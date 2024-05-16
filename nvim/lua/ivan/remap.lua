@@ -21,3 +21,6 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 -- ALlows me to see hover suggestions
 vim.keymap.set("n", "K", vim.lsp.buf.hover)
+
+-- Save on <C-s>
+vim.keymap.set("n", "<C-s>", "<cmd>w<CR>")
