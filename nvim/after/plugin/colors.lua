@@ -9,5 +9,4 @@ function LineNumberColors()
   vim.api.nvim_set_hl(0, 'LineNrBelow', { fg = 'gray', bold = true })
 end
 
-ApplyColorScheme()
 LineNumberColors()
