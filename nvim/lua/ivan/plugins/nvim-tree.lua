@@ -24,5 +24,7 @@ return {
         enable = true
       }
     })
+
+    vim.keymap.set("n", "<C-f>", "<cmd>NvimTreeFindFileToggle<CR>", { desc = "Toggle file explorer on current file" })
   end
 }
