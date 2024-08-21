@@ -15,5 +15,7 @@ return {
     vim.keymap.set('n', '<leader>fr', function()
       builtin.lsp_references()
     end)
+
+    vim.keymap.set('n', '<leader>fd', builtin.lsp_document_symbols, {})
   end
 }
