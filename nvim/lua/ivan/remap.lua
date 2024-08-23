@@ -24,3 +24,12 @@ vim.keymap.set("n", "K", vim.lsp.buf.hover)
 
 -- Save on <C-s>
 vim.keymap.set("n", "<C-s>", "<cmd>w<CR>")
+
+-- Auto close
+vim.keymap.set("i", "\"", "\"\"<left>")
+vim.keymap.set("i", "'", "\'\'<left>")
+vim.keymap.set("i", "(", "()<left>")
+vim.keymap.set("i", "[", "[]<left>")
+vim.keymap.set("i", "{", "{}<left>")
+vim.keymap.set("i", "{<CR>", "{<CR>}<ESC>O")
+vim.keymap.set("i", "{;<CR>", "{<CR>};<ESC>O")
